@@ -21,11 +21,19 @@ header nav {
     align-items: center; }
     header nav .nav-links a i {
       color: #ffffff;
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 0.5rem;
       transition: all .4s; }
     header nav .nav-links a i:hover {
       background-color: #000000; }
+
+footer {
+  background-color: #262626;
+  padding: 0.5rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center; }
 
 a {
   text-decoration: none; }

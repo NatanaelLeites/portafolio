@@ -21,13 +21,13 @@ header{
                 font-weight: 600;
             }
         }
-
+        
         .nav-links{
             @include flex;
             a{
                 i{
                     color: #ffffff;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     padding: 0.5rem;
                     transition: all .4s;
                 }
