@@ -40,6 +40,14 @@ header nav {
       header nav .nav-links a i:hover {
         background-color: #000000; }
 
+main .hero {
+  display: flex;
+  align-items: center; }
+  main .hero img {
+    height: 250px; }
+  main .hero p {
+    color: #ffffff; }
+
 footer {
   background-color: #262626;
   padding: 0.5rem;

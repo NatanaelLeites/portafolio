@@ -3,7 +3,13 @@ $fondo-oscuro: #262626;
 $color-principal: #00A895;
 $fuente-principal: "Roboto", sans-serif;
 $fuente-secundaria: "Rajdhani", sans-serif;
+
 @mixin flex {
     display: flex;
     align-items: center;
+}
+
+@mixin sin-margen {
+    padding: 0;
+    margin: 0;
 }

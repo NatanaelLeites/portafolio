@@ -1,13 +1,11 @@
-@import 'variables';
-@import 'header';
-@import 'footer';
-a{
-    text-decoration: none;
-}
-li{
-    list-style-type: none;
-}
-body{
-    background-image: linear-gradient(to right, #1fefe2 0%, #0083f5 100%);
-    font-family: $fuente-principal;
+main{
+    .hero{
+        @include flex;
+        img{
+            height: 250px;
+        };
+        p{
+            color: #ffffff;
+        }
+    }
 }
