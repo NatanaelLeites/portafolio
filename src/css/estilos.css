@@ -1,8 +1,6 @@
 header nav {
-  padding: .5rem;
-  position: fixed;
-  width: 100%;
-  background-color: #3d3d3dab;
+  padding: 0 .5rem;
+  background-color: #222222;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -18,7 +16,7 @@ header nav {
         height: 3rem;
         transition: all .4s; }
       header nav .nav-titular a img:hover {
-        transform: rotate(180deg); }
+        filter: drop-shadow(0px 0px 1px #ffffff); }
     header nav .nav-titular h1 {
       color: #ffffff;
       font-family: "Rajdhani", sans-serif;
@@ -43,13 +41,34 @@ header nav {
 main .hero {
   display: flex;
   align-items: center; }
-  main .hero img {
-    height: 250px; }
-  main .hero p {
-    color: #ffffff; }
+  main .hero aside {
+    background-color: #222222;
+    color: #ffffff;
+    flex: .5;
+    padding: 1em; }
+    main .hero aside ul {
+      padding: 0; }
+      main .hero aside ul span {
+        color: #00A895;
+        font-weight: bold;
+        font-size: 1.2em; }
+      main .hero aside ul li {
+        background-color: #ffffff41;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 10px; }
+  main .hero .hero-content {
+    background-color: #00000061;
+    flex: 4;
+    padding: 0 1em;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #000000ab; }
+    main .hero .hero-content p {
+      font-size: 1.3em;
+      line-height: 1.5; }
 
 footer {
-  background-color: #262626;
+  background-color: #222222;
   padding: 0.5rem;
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
@@ -63,5 +82,5 @@ li {
   list-style-type: none; }
 
 body {
-  background-image: linear-gradient(to right, #1fefe2 0%, #0083f5 100%);
+  background-image: linear-gradient(to right, #0060b5 0%, #004d91 100%);
   font-family: "Roboto", sans-serif; }

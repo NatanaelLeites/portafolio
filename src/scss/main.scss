@@ -1,11 +1,40 @@
-main{
-    .hero{
+main {
+    .hero {
         @include flex;
-        img{
-            height: 250px;
-        };
-        p{
+
+        aside {
+            background-color: $fondo-oscuro;
             color: #ffffff;
+            flex: .5;
+            padding: 1em;
+            
+            ul {
+                padding: 0;
+                span{
+                    color: $color-principal;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+                li {
+                    background-color: #ffffff41;
+                    margin: 5px 0;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .hero-content {
+            background-color: #00000061;
+            flex: 4;
+            padding: 0 1em;
+            color: #ffffff;
+            text-shadow: 0px 0px 2px #000000ab;
+
+            p {
+                font-size: 1.3em;
+                line-height: 1.5;
+            }
         }
     }
 }
