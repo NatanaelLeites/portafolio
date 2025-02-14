@@ -1,0 +1,32 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000e7, #000000bd),
+        url("../img/logoNataTransparent.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 30px;
+        color: #fff;
+    }
+
+    /* .hero-logo {
+        height: 100vh;
+        top: 0;
+        left: 0;
+        border: solid 1px #fff;
+        position: absolute;
+        top: -150px;
+        left: auto;
+    } */
+
+    .hero-txt {
+        color: #fff;
+    }
+}
