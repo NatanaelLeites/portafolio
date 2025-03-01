@@ -1,0 +1,107 @@
+header {
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .nav__logo {
+            a {
+                text-decoration: none;
+
+                .logo {
+                    color: #000;
+
+                    span {
+                        color: $color-acento;
+                    }
+                }
+            }
+        }
+
+        .nav__links {
+            display: block;
+            position: absolute;
+            top: -12rem;
+            opacity: 0;
+            transition: all .5s;
+
+            .nav__link {
+                text-decoration: none;
+                font-weight: 500;
+                margin: 0 5px;
+                color: #000;
+                transition: color .5s;
+            }
+
+            .nav__link:hover {
+                color: $color-acento;
+            }
+        }
+
+        .activo {
+            top: 2.5rem;
+            opacity: 1;
+            animation: none;
+        }
+
+        .bx-menu-alt-right {
+            font-size: 24px;
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        .abierto {
+            color: $color-acento;
+        }
+    }
+}
+
+.scale-in-ver-top {
+    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
+}
+.scale-in-ver-top1 {
+    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@-webkit-keyframes scale-in-ver-top {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-ver-top {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
