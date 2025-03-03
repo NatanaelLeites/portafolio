@@ -2,6 +2,8 @@
 @import "./variables.scss";
 @import "./header.scss";
 @import "./main.scss";
+@import "./hero.scss";
+@import "./footer.scss";
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +18,18 @@ html {
 body {
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: $color-fondo;
+    overflow-x: hidden;
+}
+.conatinerApp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .bx-menu-alt-right{
+        position: fixed;
+        right: 3rem;
+        top: 3rem;
+        font-size: 2rem;
+        color: #fff;
+    }
 }
