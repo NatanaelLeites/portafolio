@@ -17,6 +17,7 @@ html {
 
 body {
     width: 100vw;
+    height: 100vh;
     display: flex;
     background-color: $color-fondo;
     overflow-x: hidden;
@@ -27,9 +28,11 @@ body {
     width: 100%;
     .bx-menu-alt-right{
         position: fixed;
-        right: 3rem;
-        top: 3rem;
+        right: 2rem;
+        top: 2rem;
         font-size: 2rem;
         color: #fff;
+        cursor: pointer;
     }
+
 }

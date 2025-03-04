@@ -1,49 +1,69 @@
 header {
-    padding: 1rem;
+    position: fixed;
+    padding: .5rem;
     width: 100%;
-    max-width: 290px;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    background: #040b14;
-    .perfil{
-        height: 120px;
-        width: 120px;
+    align-items: center;
+    background: #0000001a;
+
+    .perfil {
+        height: 80px;
+        width: 80px;
         border-radius: 100%;
         border: solid 8px #5e5e5e67;
         overflow: hidden;
-        margin: 0 auto;
-        img{
+
+        img {
             object-fit: cover;
             height: 100%;
             width: 100%;
         }
     }
+
     .nav {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         .nav__logo {
-            margin: 0 auto;
             a {
                 text-decoration: none;
+
                 .logo {
-                    margin-top: 1rem;
+                    margin: 0 1rem;
                     font-size: 1.8rem;
                     font-weight: 300;
                     color: #ffffff;
+
                     span {
                         color: $color-acento;
+                        font-weight: 900;
                     }
                 }
             }
         }
-        .opciones{
+
+        .nav__links {
             display: flex;
-            justify-content: center;
-            .idioma{
+            align-items: center;
+            .nav__link {
+                margin: 0 1rem;
+                text-decoration: none;
+                font-weight: 500;
+                color: #ffffff;
+                transition: background .5s;
+                width: 50%;
+                background: transparent;
+                border-radius: 30px;
+                padding: 0.5rem;
+            }
+
+            .nav__link:hover {
+                background: #0062ffc2;
+            }
+        }
+        .opciones {
+            display: flex;
+            .idioma {
                 margin: 1rem .5rem;
                 height: 30px;
                 transition: all .5s;
@@ -51,32 +71,19 @@ header {
                 border: solid 2px #4f4f4f;
                 border-radius: 100%;
             }
-            .idioma:hover{
+
+            .idioma:hover {
                 border: solid 2px #ffffff;
             }
         }
-        .nav__links {
-            display: flex;
-            flex-direction: column;
-            .nav__link {
-                margin: 1rem 0;
-                text-decoration: none;
-                font-weight: 500;
-                color: #ffffff;
-                transition: color .5s;
-                width: 50%;
-            }
-
-            .nav__link:hover {
-                color: $color-acento;
-            }
-        }
     }
+
     .bx-menu-alt-right {
         font-size: 24px;
         cursor: pointer;
         transition: all .5s;
     }
+
     /* .abierto {
         color: $color-acento;
     } */

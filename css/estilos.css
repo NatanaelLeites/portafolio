@@ -47,27 +47,22 @@
   }
 }
 header {
-  padding: 1rem;
+  position: fixed;
+  padding: 0.5rem;
   width: 100%;
-  max-width: 290px;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  background: #040b14;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1019607843);
   /* .abierto {
       color: $color-acento;
   } */
 }
 header .perfil {
-  height: 120px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
   border-radius: 100%;
   border: solid 8px rgba(94, 94, 94, 0.4039215686);
   overflow: hidden;
-  margin: 0 auto;
 }
 header .perfil img {
   object-fit: cover;
@@ -76,26 +71,42 @@ header .perfil img {
 }
 header .nav {
   display: flex;
-  flex-direction: column;
-}
-header .nav .nav__logo {
-  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
 }
 header .nav .nav__logo a {
   text-decoration: none;
 }
 header .nav .nav__logo a .logo {
-  margin-top: 1rem;
+  margin: 0 1rem;
   font-size: 1.8rem;
   font-weight: 300;
   color: #ffffff;
 }
 header .nav .nav__logo a .logo span {
   color: #0062ff;
+  font-weight: 900;
+}
+header .nav .nav__links {
+  display: flex;
+  align-items: center;
+}
+header .nav .nav__links .nav__link {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  transition: background 0.5s;
+  width: 50%;
+  background: transparent;
+  border-radius: 30px;
+  padding: 0.5rem;
+}
+header .nav .nav__links .nav__link:hover {
+  background: rgba(0, 98, 255, 0.7607843137);
 }
 header .nav .opciones {
   display: flex;
-  justify-content: center;
 }
 header .nav .opciones .idioma {
   margin: 1rem 0.5rem;
@@ -108,21 +119,6 @@ header .nav .opciones .idioma {
 header .nav .opciones .idioma:hover {
   border: solid 2px #ffffff;
 }
-header .nav .nav__links {
-  display: flex;
-  flex-direction: column;
-}
-header .nav .nav__links .nav__link {
-  margin: 1rem 0;
-  text-decoration: none;
-  font-weight: 500;
-  color: #ffffff;
-  transition: color 0.5s;
-  width: 50%;
-}
-header .nav .nav__links .nav__link:hover {
-  color: #0062ff;
-}
 header .bx-menu-alt-right {
   font-size: 24px;
   cursor: pointer;
@@ -131,14 +127,13 @@ header .bx-menu-alt-right {
 
 .main {
   width: 100%;
-  overflow-x: hidden;
-  transition: 0.5s;
+  height: 100vh;
 }
 
 .hero {
   height: 100vh;
   background: url("../img/foto2.2.jpeg");
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3rem;
@@ -151,7 +146,7 @@ header .bx-menu-alt-right {
   margin: 0;
   color: #fff;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 500;
   padding: 3rem;
   border-radius: 100px;
   backdrop-filter: blur(3px);
@@ -193,6 +188,7 @@ html {
 
 body {
   width: 100vw;
+  height: 100vh;
   display: flex;
   background-color: #e4e4e4;
   overflow-x: hidden;
@@ -205,10 +201,11 @@ body {
 }
 .conatinerApp .bx-menu-alt-right {
   position: fixed;
-  right: 3rem;
-  top: 3rem;
+  right: 2rem;
+  top: 2rem;
   font-size: 2rem;
   color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=estilos.css.map */
